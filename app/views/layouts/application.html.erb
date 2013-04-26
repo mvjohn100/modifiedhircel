@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hircle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	 <%#= stylesheet_link_tag    "application", :media => "all" %>
+    <%= stylesheet_link_tag  "bootstrap.css" %>
+    <%= stylesheet_link_tag  "style.css" %>
+    <%= stylesheet_link_tag  "bootstrap-responsive.css" %>
+    <%= stylesheet_link_tag  "prettify.css" %>
+    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag  "http://localhost:9292/faye.js" %>
+
+   <!-- Fav and touch icons -->
+	  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+	  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+	  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+	  <link rel="shortcut icon" href="assets/ico/favicon.png">
+	
+	 <%= csrf_meta_tags %>
+	
+  </head>
+
+<body>
+
+<!-- chat div -->
+<div id="chat_segment" style="position: absolute;right: 50px;bottom: 50px;z-index: 10;">
+  <div id="chat_window" style="position: relative;width:300px;height:170px;background-color:gray;">
+
+  </div>
+  <div id="chat_text" style="position: relative;width:300px;height:30px;background-color:green;">
+    <input type="text" name="chat">
+    <input type="button" value="send" id="chat_send">
+  </div>
+</div>
+
+	<div id="wrap">
+	<%= render :partial => "/layouts/header" %>
+	<!-- <div class='text_align_left'><%#= link_to "Company Setting", company_setting_path%></div> -->
+	
+
+  
+
+<%= yield %>
+
+
+
+
+	<%= render :partial => "/layouts/footer" %>
+
+</div>
+</body>
+</html>

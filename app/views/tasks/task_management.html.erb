@@ -1,0 +1,383 @@
+<div class="container">
+
+       <!-- <div class="page-header">
+          <h1>Sticky footer with fixed navbar</h1>
+        </div>
+        <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added within <code>#wrap</code> with <code>padding-top: 60px;</code> on the <code>.container</code>.</p>
+        <p>Back to <a href="./sticky-footer.html">the sticky footer</a> minus the navbar.</p>
+      </div> -->
+	      <div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span2">
+					 <!--Sidebar content-->
+						<div class="sidebar-menu"><a class="accordion-toggle">TASK MANAGEMENT</a></div>
+						<div class="accordion" id="accordion2">
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+									All Tasks
+									</a>
+								</div>
+								<!-- <div id="collapseOne" class="accordion-body collapse in">
+									<div class="accordion-inner">
+										<ul>
+											<li class="active"><a href="#">Home</a></li>
+											<li><a href="#about">About</a></li>
+											<li><a href="#contact">Contact</a></li>
+										</ul>
+									</div>
+								</div> -->
+							</div>
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+										Completed Task
+									</a>
+								</div>
+								
+							</div>
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+									Late Task
+									</a>
+								</div>
+								
+							</div>
+							<div class="accordion-group">
+								<div class="accordion-heading">
+								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+								Assign Task
+								</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="span10">
+						<!--Body content-->
+						<div class="container-header taskMH"><p>Create a task</p></div>
+						<div class="content2-m">
+								<div id="demo" class="collapse in">
+									<input type="text" class="space1" placeholder="+Type here to create a task">
+									<textarea style="resize:none;" class="space1"></textarea>
+									<div>
+										<input class="space2" id="appendedDropdownButton" placeholder="+Add more people from your network" type="text">
+										<div class="btn-group">
+											<button class="btn btn-green" data-toggle="dropdown">Assign</button>
+										</div>
+									</div>
+									<div class="space2">
+											<div class="addedUserContent"><i class="addedUser" id="user001"></i>T.Cloudxify</div>
+											<div class="addedUserContent"><i class="addedUser" id="user002"></i>Cloudxify</div>	
+									</div>
+									
+									<div>
+										<input class="space2" id="appendedDropdownButton" placeholder="Attach a file" type="text">
+										<div class="btn-group">
+											<button class="btn btn-green" data-toggle="dropdown">Browse</button>
+										</div>
+									</div>
+
+									
+									<div class="space2">
+									 <ul class="date-option "><li>Due Date:</li>
+										<li>
+										   <select class="selectpicker" style="display: none;">
+												<optgroup label="Day">
+												<option>Type1</option>
+												<option>Type2</option>
+												<option>Type3</option>
+												</optgroup>
+												
+											</select><div class="btn-group bootstrap-select"><button class="btn dropdown-toggle clearfix" data-toggle="dropdown"><span class="filter-option pull-left">Type1</span>&nbsp;<span class="caret"></span></button><ul class="dropdown-menu" role="menu" style="max-height: 4px; overflow-y: auto; min-height: 92px;"><li rel="0" class="selected"><dt>Day</dt><a tabindex="-1" href="#" class="opt "><span class="pull-left">Type1</span><i class="icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="-1" href="#" class="opt "><span class="pull-left">Type2</span><i class="icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="-1" href="#" class="opt "><span class="pull-left">Type3</span><i class="icon-ok check-mark"></i></a></li></ul></div>
+										</li>
+										<li>
+										    <select class="selectpicker" style="display: none;">
+												<optgroup label="Month">
+												<option>Type1</option>
+												<option>Type2</option>
+												<option>Type3</option>
+												</optgroup>
+												
+											</select><div class="btn-group bootstrap-select"><button class="btn dropdown-toggle clearfix" data-toggle="dropdown"><span class="filter-option pull-left">Type1</span>&nbsp;<span class="caret"></span></button><ul class="dropdown-menu" role="menu" style="max-height: 4px; overflow-y: auto; min-height: 92px;"><li rel="0" class="selected"><dt>Month</dt><a tabindex="-1" href="#" class="opt "><span class="pull-left">Type1</span><i class="icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="-1" href="#" class="opt "><span class="pull-left">Type2</span><i class="icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="-1" href="#" class="opt "><span class="pull-left">Type3</span><i class="icon-ok check-mark"></i></a></li></ul></div>
+
+										</li>
+										<li>
+										   <select class="selectpicker" style="display: none;">
+												<optgroup label="Year">
+												<option>Type1</option>
+												<option>Type2</option>
+												<option>Type3</option>
+												</optgroup>
+												
+											</select><div class="btn-group bootstrap-select"><button class="btn dropdown-toggle clearfix" data-toggle="dropdown"><span class="filter-option pull-left">Type1</span>&nbsp;<span class="caret"></span></button><ul class="dropdown-menu" role="menu" style="max-height: 4px; overflow-y: auto; min-height: 92px;"><li rel="0" class="selected"><dt>Year</dt><a tabindex="-1" href="#" class="opt "><span class="pull-left">Type1</span><i class="icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="-1" href="#" class="opt "><span class="pull-left">Type2</span><i class="icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="-1" href="#" class="opt "><span class="pull-left">Type3</span><i class="icon-ok check-mark"></i></a></li></ul></div>
+
+										</li>
+									 </ul>
+									</div>
+									<div class="span11">
+										<button class="btn btn-green btn-R-pos">Add Task</button>
+									</div>
+								</div><!--Simple Button collapse start -->
+								<div class="btn-M-pos" data-toggle="collapse" data-target="#demo">
+								<i class="down-arrow-blue"></i>
+								</div><!--Simple Button Collapse end -->
+
+						</div>
+						<div class="containerTitle">
+								<div class="line1"></div> <div class="dateTitle">Tasks</div><div class="line2"></div>
+						</div>
+						<div class="accordion accordion1" id="accordion2">
+								<div class="accordion-group">
+									<div class="accordion-heading">
+										<div class="accordion-toggle heading-color" data-toggle="collapse" href="#collapseD1">
+											<i class="img-circle circle-note"><spna>1</spna></i>
+											<p style="margin-bottom:0px; display:inline;">Analysing the anual report</p>
+											<i class="accord-arrow" style="margin-top:0px;"></i><i style="margin-top:4px;" class="icon-remove green"></i>
+													<i class="icon-comment green" style="margin-top:4px;"></i>
+										</div>
+									</div>
+									<div id="collapseD1" class="accordion-body collapse in">
+										<div class="accordion-inner" style="display:-moz-groupbox;">
+											<div><p class="text-info">Title:</p>&nbsp; analysing the annaul report<i style="margin-left:4px;" class=" icon-pencil"></i></div>
+											<div><p class="text-info">Description:</p>&nbsp; Creating the best possible annual report is impossible without precise attention to details.<i style="margin-left:4px;" class=" icon-pencil"></i></div>
+											<div>
+												<p style="margin-top:12px;" class="text-info">Assign:</p>
+												<input class="space2" id="appendedDropdownButton" placeholder="+Add more people from your network" type="text">
+												<div class="btn-group">
+													<button class="btn btn-green" data-toggle="dropdown">Assign</button>
+												</div>
+											</div>
+											<div style="margin-left:44px;" class="space2">
+												<div class="addedUserContent"><i class="addedUser" id="user001"></i>T.Cloudxify</div>
+												<div class="addedUserContent"><i class="addedUser" id="user002"></i>Cloudxify</div>	
+											</div>
+											<div>
+												<p style="margin-top:12px;" class="text-info">Document:</p>
+												<input class="space2" id="appendedDropdownButton" placeholder="Attach a file" type="text">
+												<div class="btn-group">
+													<button class="btn btn-green" data-toggle="dropdown">Browse</button>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="accordion-group">
+									<div class="accordion-heading">
+										<div class="accordion-toggle heading-color" data-toggle="collapse" href="#collapseD2">
+											<i class="img-circle circle-note">2</i>
+											<p style="margin-bottom:0px; display:inline;">Analysing the anual report</p>
+											<i class="accord-arrow" style="margin-top:0px;"></i><i style="margin-top:4px;" class="icon-remove green"></i>
+													<i class="icon-comment green" style="margin-top:4px;"></i>
+										</div>
+									</div>
+									<div id="collapseD2" class="accordion-body collapse">
+										<div class="accordion-inner" style="display:-moz-groupbox;">
+											<div><p class="text-info">Title:</p>&nbsp; analysing the annaul report<i style="margin-left:4px;" class=" icon-pencil"></i></div>
+											<div><p class="text-info">Description:</p>&nbsp; Creating the best possible annual report is impossible without precise attention to details.<i style="margin-left:4px;" class=" icon-pencil"></i></div>
+											<div>
+												<p style="margin-top:12px;" class="text-info">Assign:</p>
+												<input class="space2" id="appendedDropdownButton" placeholder="+Add more people from your network" type="text">
+												<div class="btn-group">
+													<button class="btn btn-green" data-toggle="dropdown">Assign</button>
+												</div>
+											</div>
+											<div style="margin-left:44px;" class="space2">
+												<div class="addedUserContent"><i class="addedUser" id="user001"></i>T.Cloudxify</div>
+												<div class="addedUserContent"><i class="addedUser" id="user002"></i>Cloudxify</div>	
+											</div>
+											<div>
+												<p style="margin-top:12px;" class="text-info">Document:</p>
+												<input class="space2" id="appendedDropdownButton" placeholder="Attach a file" type="text">
+												<div class="btn-group">
+													<button class="btn btn-green" data-toggle="dropdown">Browse</button>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="accordion-group">
+									<div class="accordion-heading">
+										<div class="accordion-toggle heading-color" data-toggle="collapse" href="#collapseD3">
+											<i class="img-circle circle-note">3</i>
+											<p style="margin-bottom:0px; display:inline;">Analysing the anual report</p>
+											<i class="accord-arrow" style="margin-top:0px;"></i><i style="margin-top:4px;" class="icon-remove green"></i>
+													<i class="icon-comment green" style="margin-top:4px;"></i>
+										</div>
+									</div>
+									<div id="collapseD3" class="accordion-body collapse">
+										<div class="accordion-inner" style="display:-moz-groupbox;">
+											<div><p class="text-info">Title:</p>&nbsp; analysing the annaul report<i style="margin-left:4px;" class=" icon-pencil"></i></div>
+											<div><p class="text-info">Description:</p>&nbsp; Creating the best possible annual report is impossible without precise attention to details.<i style="margin-left:4px;" class=" icon-pencil"></i></div>
+											<div>
+												<p style="margin-top:12px;" class="text-info">Assign:</p>
+												<input class="space2" id="appendedDropdownButton" placeholder="+Add more people from your network" type="text">
+												<div class="btn-group">
+													<button class="btn btn-green" data-toggle="dropdown">Assign</button>
+												</div>
+											</div>
+											<div style="margin-left:44px;" class="space2">
+												<div class="addedUserContent"><i class="addedUser" id="user001"></i>T.Cloudxify</div>
+												<div class="addedUserContent"><i class="addedUser" id="user002"></i>Cloudxify</div>	
+											</div>
+											<div>
+												<p style="margin-top:12px;" class="text-info">Document:</p>
+												<input class="space2" id="appendedDropdownButton" placeholder="Attach a file" type="text">
+												<div class="btn-group">
+													<button class="btn btn-green" data-toggle="dropdown">Browse</button>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="accordion-group">
+									<div class="accordion-heading">
+										<div class="accordion-toggle heading-color" data-toggle="collapse" href="#collapseD4">
+											<i class="img-circle circle-note">4</i>
+											<p style="margin-bottom:0px; display:inline;">Analysing the anual report</p>
+											<i class="accord-arrow" style="margin-top:0px;"></i><i style="margin-top:4px;" class="icon-remove green"></i>
+													<i class="icon-comment green" style="margin-top:4px;"></i>
+										</div>
+									</div>
+									<div id="collapseD4" class="accordion-body collapse">
+										<div class="accordion-inner" style="display:-moz-groupbox;">
+											<div><p class="text-info">Title:</p>&nbsp; analysing the annaul report<i style="margin-left:4px;" class=" icon-pencil"></i></div>
+											<div><p class="text-info">Description:</p>&nbsp; Creating the best possible annual report is impossible without precise attention to details.<i style="margin-left:4px;" class=" icon-pencil"></i></div>
+											<div>
+												<p style="margin-top:12px;" class="text-info">Assign:</p>
+												<input class="space2" id="appendedDropdownButton" placeholder="+Add more people from your network" type="text">
+												<div class="btn-group">
+													<button class="btn btn-green" data-toggle="dropdown">Assign</button>
+												</div>
+											</div>
+											<div style="margin-left:44px;" class="space2">
+												<div class="addedUserContent"><i class="addedUser" id="user001"></i>T.Cloudxify</div>
+												<div class="addedUserContent"><i class="addedUser" id="user002"></i>Cloudxify</div>	
+											</div>
+											<div>
+												<p style="margin-top:12px;" class="text-info">Document:</p>
+												<input class="space2" id="appendedDropdownButton" placeholder="Attach a file" type="text">
+												<div class="btn-group">
+													<button class="btn btn-green" data-toggle="dropdown">Browse</button>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="accordion-group">
+									<div class="accordion-heading">
+										<div class="accordion-toggle heading-color" data-toggle="collapse" href="#collapseD5">
+											<i class="img-circle circle-note">5</i>
+											<p style="margin-bottom:0px; display:inline;">Analysing the anual report</p>
+											<i class="accord-arrow" style="margin-top:0px;"></i><i style="margin-top:4px;" class="icon-remove green"></i>
+													<i class="icon-comment green" style="margin-top:4px;"></i>
+										</div>
+									</div>
+									<div id="collapseD5" class="accordion-body collapse">
+										<div class="accordion-inner" style="display:-moz-groupbox;">
+											<div><p class="text-info">Title:</p>&nbsp; analysing the annaul report<i style="margin-left:4px;" class=" icon-pencil"></i></div>
+											<div><p class="text-info">Description:</p>&nbsp; Creating the best possible annual report is impossible without precise attention to details.<i style="margin-left:4px;" class=" icon-pencil"></i></div>
+											<div>
+												<p style="margin-top:12px;" class="text-info">Assign:</p>
+												<input class="space2" id="appendedDropdownButton" placeholder="+Add more people from your network" type="text">
+												<div class="btn-group">
+													<button class="btn btn-green" data-toggle="dropdown">Assign</button>
+												</div>
+											</div>
+											<div style="margin-left:44px;" class="space2">
+												<div class="addedUserContent"><i class="addedUser" id="user001"></i>T.Cloudxify</div>
+												<div class="addedUserContent"><i class="addedUser" id="user002"></i>Cloudxify</div>	
+											</div>
+											<div>
+												<p style="margin-top:12px;" class="text-info">Document:</p>
+												<input class="space2" id="appendedDropdownButton" placeholder="Attach a file" type="text">
+												<div class="btn-group">
+													<button class="btn btn-green" data-toggle="dropdown">Browse</button>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="accordion-group">
+									<div class="accordion-heading">
+										<div class="accordion-toggle heading-color" data-toggle="collapse" href="#collapseD6">
+											<i class="img-circle circle-note">6</i>
+											<p style="margin-bottom:0px; display:inline;">Analysing the anual report</p>
+											<i class="accord-arrow" style="margin-top:0px;"></i><i style="margin-top:4px;" class="icon-remove green"></i>
+													<i class="icon-comment green" style="margin-top:4px;"></i>
+										</div>
+									</div>
+									<div id="collapseD6" class="accordion-body collapse">
+										<div class="accordion-inner" style="display:-moz-groupbox;">
+											<div><p class="text-info">Title:</p>&nbsp; analysing the annaul report<i style="margin-left:4px;" class=" icon-pencil"></i></div>
+											<div><p class="text-info">Description:</p>&nbsp; Creating the best possible annual report is impossible without precise attention to details.<i style="margin-left:4px;" class=" icon-pencil"></i></div>
+											<div>
+												<p style="margin-top:12px;" class="text-info">Assign:</p>
+												<input class="space2" id="appendedDropdownButton" placeholder="+Add more people from your network" type="text">
+												<div class="btn-group">
+													<button class="btn btn-green" data-toggle="dropdown">Assign</button>
+												</div>
+											</div>
+											<div style="margin-left:44px;" class="space2">
+												<div class="addedUserContent"><i class="addedUser" id="user001"></i>T.Cloudxify</div>
+												<div class="addedUserContent"><i class="addedUser" id="user002"></i>Cloudxify</div>	
+											</div>
+											<div>
+												<p style="margin-top:12px;" class="text-info">Document:</p>
+												<input class="space2" id="appendedDropdownButton" placeholder="Attach a file" type="text">
+												<div class="btn-group">
+													<button class="btn btn-green" data-toggle="dropdown">Browse</button>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="accordion-group">
+									<div class="accordion-heading">
+										<div class="accordion-toggle heading-color" data-toggle="collapse" href="#collapseD7">
+											<i class="img-circle circle-note">7</i>
+											<p style="margin-bottom:0px; display:inline;">Analysing the anual report</p>
+											<i class="accord-arrow" style="margin-top:0px;"></i><i style="margin-top:4px;" class="icon-remove green"></i>
+													<i class="icon-comment green" style="margin-top:4px;"></i>
+										</div>
+									</div>
+									<div id="collapseD7" class="accordion-body collapse">
+										<div class="accordion-inner" style="display:-moz-groupbox;">
+											<div><p class="text-info">Title:</p>&nbsp; analysing the annaul report<i style="margin-left:4px;" class=" icon-pencil"></i></div>
+											<div><p class="text-info">Description:</p>&nbsp; Creating the best possible annual report is impossible without precise attention to details.<i style="margin-left:4px;" class=" icon-pencil"></i></div>
+											<div>
+												<p style="margin-top:12px;" class="text-info">Assign:</p>
+												<input class="space2" id="appendedDropdownButton" placeholder="+Add more people from your network" type="text">
+												<div class="btn-group">
+													<button class="btn btn-green" data-toggle="dropdown">Assign</button>
+												</div>
+											</div>
+											<div style="margin-left:44px;" class="space2">
+												<div class="addedUserContent"><i class="addedUser" id="user001"></i>T.Cloudxify</div>
+												<div class="addedUserContent"><i class="addedUser" id="user002"></i>Cloudxify</div>	
+											</div>
+											<div>
+												<p style="margin-top:12px;" class="text-info">Document:</p>
+												<input class="space2" id="appendedDropdownButton" placeholder="Attach a file" type="text">
+												<div class="btn-group">
+													<button class="btn btn-green" data-toggle="dropdown">Browse</button>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+					</div><!-- span10 end -->
+				</div><!--- row-fluid end -->
+		  </div><!-- container-fluid -->
+
+      <div id="push"></div>
+    </div>
